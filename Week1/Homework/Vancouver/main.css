@@ -1,0 +1,100 @@
+h1{
+	font-size: 52px;
+	font-family: arial;
+	font-weight: lighter;
+	color: #000;
+}
+
+
+h2{
+	font-size: 28px;
+	font-family: arial;
+	font-weight: bold;
+	color: #000;
+}
+
+footer{
+	border-top: 1px solid #cccccc;
+}
+
+nav{
+	padding-bottom: 10px
+}
+
+p{
+	font-size: 14px;
+	font-family: arial;
+	font-weight: lighter;
+}
+
+p.footer{
+	font-size: 10px;
+	font-style: italic;
+}
+
+nav{
+	font-size: 14px;
+	font-family: arial;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+a:link	{
+	color: #999999;
+	text-decoration: none;
+}
+
+a:visited	{
+	color: #999999;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+a:active	{
+	color: #999999;
+	text-decoration: none;
+}
+
+a:link.navigation	{
+	color: #000;
+	text-decoration: none;
+}
+
+a:visited.navigation	{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover.navigation {
+	color: #666666;
+	text-decoration: none;
+}
+
+a:active.navigation	{
+	color: #000;
+	text-decoration: none;
+}
+
+a:link.logo	{
+	color: #000;
+	text-decoration: none;
+}
+
+a:visited.logo	{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover.logo {
+	color: #666666;
+	text-decoration: none;
+}
+
+a:active.logo	{
+	color: #000;
+	text-decoration: none;
+}
