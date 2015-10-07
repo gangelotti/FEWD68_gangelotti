@@ -1,7 +1,7 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: RELAXR BLOG
+Client: ARTHUR
+Author: Gina Angelotti
 Developer @GA in NYC
 */
 
@@ -161,7 +161,7 @@ article p:first-child:first-letter{
 article p:nth-child(2){
   text-align: right;
   font-weight:600;
-  padding-top: 20px;
+  padding-top: 40px;
   color: #033048;
 }
 
