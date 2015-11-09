@@ -1,0 +1,319 @@
+/*
+Project Name: Startup Matchmaker
+Author: Gina Angelotti
+Developer @GA in NYC
+*/
+
+/* SETUP */
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/* Container Styles */
+
+@font-face {
+    font-family: Lato, helvetica, arial, sans-serif;
+    src: url(https://fonts.googleapis.com/css?family=Merriweather:400,900,300,300italic,400italic,700,700italic,900italic|Lato:400,300,300italic,400italic,700,700italic,900,900italic);
+}
+
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+header{
+	background-color: #000;
+	border-bottom: 3px #f8ff00 solid;
+	width: 100%;
+}
+
+.logo{
+	padding: 20px;
+}
+
+ul{
+	display: block;
+	text-align: right;
+	padding: 0 40px 20px 20px;
+}
+
+.mantle{
+	width: 100%;
+}
+
+.banner{
+	background-color: #c6c6c6;
+	padding: 20px;
+}
+
+.callout{
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1025px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+}
+
+.calloutBox{
+	display: block;
+	width: 240px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	padding: 22px 20px 20px 20px;
+	margin: 40px;
+	background-color: rgba(255, 255, 255, 0.75);
+	box-shadow: 0px 1px 1px 3px rgba(51, 51, 51, 0.2); 
+}
+
+.getStarted{
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.left{
+	float: left;
+	width: 33%;
+	padding: 10px 30px 20px 30px;
+}
+
+.center{
+	float: left;
+	width: 33%;
+	padding: 10px 30px 20px 30px;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.right{
+	float: left;
+	width: 33%;
+	padding: 10px 30px 20px 30px;
+}
+
+footer{
+	background-color: #000;
+	padding: 20px 30px 20px 30px;
+}
+
+.menu-btn span {
+ width: 50px;
+ height: 5px;
+ border-radius: 2px;
+ margin-bottom: 5px;
+ background: rgb(248,255,0);
+ z-index: 99;
+ margin: 5px 2%;
+ display: block;
+}
+
+/* Type Styles */
+h1{
+	color: #f8ff00;
+	font-family: Merriweather, georgia, sans-serif;
+	font-size: 32px;
+	font-weight: 900;
+	text-align: left;
+}
+
+h2{
+	color: #000;
+	font-family: Merriweather, georgia, sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+
+h2 .crossout{
+	text-decoration: line-through;
+	color: #666;
+}
+
+h2 .underline{
+	border-bottom: 2px solid #f8ff00;
+}
+
+h3{
+	color: #000;
+	font-family: Lato, helvetica, arial, sans-serif;
+	font-size: 1.25em;
+	font-weight: 900;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+h4{
+	color: #000;
+	font-family: Merriweather, georgia, sans-serif;
+	font-size: 1.25em;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 10px;
+	line-height: 1.25em;
+}
+
+p{
+	color: #000;
+	font-family: Lato, helvetica, arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+a.button{
+	color: #000;
+	font-family: Anton, helvetica, arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 13px 10px 13px 10px;
+	margin-top: 20px; 
+	background-color: #f8ff00;
+	border-radius: 4px;
+	border-bottom: 2px solid #c6cc00;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+
+.getStarted a.button{
+	background-color: #c6c6c6;
+	border-radius: 4px;
+	border-bottom: 2px solid #666666;
+	display: inline-block;
+	width: 100%;
+}
+
+nav a{
+	color:#fff;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #f8ff00;
+}
+
+.main-nav li{
+	font-family: Lato, helvetica, arial, sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: right;
+	display: inline;
+	margin-left: 20px;
+}
+
+.main-nav li a span{
+	font-family: Anton, helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1.25em;
+	text-decoration: none;
+}
+
+footer p{
+	color: #fff;
+	font-weight: 700;
+}
+
+/* Media Queries */
+@media (min-width: 320px) and (max-width: 480px){
+.banner {display: none;}
+img.bg {min-height: 100%; min-width: 320px; width: 100%; height: auto;}
+.calloutBox p span{display: none;}
+.calloutBox p:after{content: "Startup Matchmaker is the best place for designers and developers to find each other.";}
+.calloutBox{margin: 10px;width: 50%;}
+.getStarted{display: block;padding: 0px; border-style: none;}
+.left{width: 100%; float: none; padding: 10px 3%;}
+.center{width: 100%; float:none; padding: 10px 3%;}
+.right{width: 100%; float: none; padding: 10px 3%;}
+h1{font-size: 1.5em;}
+.menu-btn {position: absolute;top:10px;right: 10px;} 
+.main-nav {display: none; overflow: hidden;}
+.logo{padding-bottom: 5px;}
+.expand{display: block;}
+.responsive-menu ul {margin-left:20px; padding: 0;width: 100%;}
+.responsive-menu li {text-align: left;margin: 0;padding:10px 0;display: block;}
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+.banner {font-size: .65em;padding: 10px}
+img.bg {min-height: 100%; min-width: 481px; width: 100%; height: auto;}
+.calloutBox {margin:20px;}
+.getStarted{padding: 10px 0;}
+.left{width: 50%; padding: 10px 3%;border-right: 1px solid #ccc;}
+.center{width: 50%; padding: 10px 3%;border: none;margin-bottom: 30px;}
+.right{width: 50%; padding: 10px 3%;}
+h1{font-size: 1.5em;}
+.menu-btn {position: absolute;top:10px;right: 10px;} 
+.main-nav {display: none; overflow: hidden;}
+.logo{padding-bottom: 5px;}
+.expand{display: block;}
+.responsive-menu ul {margin-left:20px; padding: 0;width: 100%;}
+.responsive-menu li {text-align: left;margin: 0;padding:10px 0;display: block;}
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+img.bg {min-height: 100%; min-width: 769px; width: 100%; height: auto;}
+.calloutBox {margin:30px;}
+.getStarted{padding: 10px 0;}
+.menu-btn {display:none;} 
+}
+
+@media (min-width: 1025px) and (max-width: 1280px){
+.menu-btn {display:none;} 
+}
+
+
+
+
