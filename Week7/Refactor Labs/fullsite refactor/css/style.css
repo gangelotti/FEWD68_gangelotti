@@ -1,7 +1,11 @@
-/* Getting the new tags to behave */
-article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
-mark, rp, rt, ruby, summary, time{ display: inline }
-
+@font-face {
+    font-family: Lobster, cursive, sans-serif;
+    src: url(https://www.google.com/fonts#UsePlace:use/Collection:Lobster);
+}
+@font-face {
+    font-family: Raleway, helvetica, arial, sans-serif;
+    src: url(https://www.google.com/fonts#UsePlace:use/Collection:Raleway:400,900,800,700,600,500,300,200,100);
+}
 /* Add font rules here */
 
 /* Site-wide properties ======================================================== */
@@ -103,11 +107,23 @@ footer a:hover{background-color: #fbdca6; -moz-border-radius: 5px; -webkit-borde
 ul.anchorstory { position: relative; left: 450px; top: -50px; display: block; list-style: none;}
 ul.anchorstory li{ display:inline; margin-left: 10px;}
 ul.anchorstory li a{text-decoration:none;}
-/* Fonts types and spacing */
-h1{ font: 88px 'Lobster1.1Regular', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
-    h1 span{ font: 88px RalewayThin, Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#AB7008; letter-spacing: -4px }
 
-h2 { font-family: 'Lobster1.1Regular', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
+/* Fonts types and spacing */
+h1{
+	font-family: Lobster; 
+	color:#5687C9; 
+	font-size: 88px;
+	padding-top: 20px;
+}
+
+h1 span{
+	font-family: Raleway; 
+	font-weight: 100;
+	color:#AB7008; 
+	letter-spacing: -4px;
+}
+
+h2 {font-family: 'Lobster1.1Regular', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
 
 p {margin:0 0 1.5em;}
 

@@ -1,1 +1,7 @@
-// Put all your lovely jQuery / Javascript goodies right down here.
+// accordion
+$('.accordionButton').on('click', function(){
+    $(".accordionContent").accordion({
+      collapsible: true,
+    });
+  });
+
